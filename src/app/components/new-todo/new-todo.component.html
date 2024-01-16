@@ -1,0 +1,5 @@
+<div class="popup flex flex-col justify-center" [class.hidden]="show">
+    <input [(ngModel)]="text" (keyup.enter)="sendNewTodo()" type="text" class="border-2 py-2 px-4 rounded-xl w-full my-1">
+    <button (click)="sendNewTodo()" class="bg-slate-300 hover:bg-slate-600 font-bold py-2 px-4 rounded-xl my-1">Add</button>
+    <button (click)="sendShow()" class="bg-slate-300 hover:bg-slate-600 font-bold py-2 px-4 rounded-xl my-1">Cancel</button>
+  </div>
